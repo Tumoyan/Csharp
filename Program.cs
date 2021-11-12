@@ -7,6 +7,9 @@ namespace Csharp
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            int i = 0;
+                        Console.WriteLine(i);
+
         }
     }
 }
