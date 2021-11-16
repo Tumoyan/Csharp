@@ -6,13 +6,11 @@ namespace Csharp
     {
         static void Main(string[] args)
         {
-            int num_1 = 0 ;
-            int num_2 = 0;
-
-            num_1 = Convert.ToInt32(Console.ReadLine());
-            num_2 = Convert.ToInt32(Console.ReadLine());
-
-                        Console.WriteLine("First number " + num_1 + " Second number " + num_2);
+     
+         System.Console.WriteLine("Введите радиус круга: " );
+        double radius = Convert.ToDouble(Console.ReadLine());
+        double area = Math.PI * Math.Pow(radius , 2);
+        System.Console.WriteLine("Площадь круга с радиусом {0} равана {1}" , radius, area);
 
 
         }
