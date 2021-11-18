@@ -7,13 +7,21 @@ namespace Csharp
         static void Main(string[] args)
         {
      
-         System.Console.WriteLine("Введите радиус круга: " );
-        double radius = Convert.ToDouble(Console.ReadLine());
-        double area = Math.PI * Math.Pow(radius , 2);
-        System.Console.WriteLine("enter");
-        System.Console.WriteLine("Площадь круга с радиусом {0} равана {1}" , radius, area);
-
-
+            bool isHasCar = true;
+         int a = 5;
+         
+         if(a > 5 ){
+             System.Console.WriteLine("Happy");
+         } else if (a < 5){
+             System.Console.WriteLine("Undifaded");
+         } else if((a == 5 || isHasCar) && a > 6){
+             System.Console.WriteLine("URA");
+         } else
+            {
+                System.Console.WriteLine("Recognizer");
+            }
+            if (isHasCar)
+            System.Console.WriteLine("User has car");
+         }
         }
     }
-}
