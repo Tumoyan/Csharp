@@ -7,21 +7,30 @@ namespace Csharp
         static void Main(string[] args)
         {
      
-            bool isHasCar = true;
-         int a = 5;
-         
-         if(a > 5 ){
-             System.Console.WriteLine("Happy");
-         } else if (a < 5){
-             System.Console.WriteLine("Undifaded");
-         } else if((a == 5 || isHasCar) && a > 6){
-             System.Console.WriteLine("URA");
-         } else
-            {
-                System.Console.WriteLine("Recognizer");
-            }
-            if (isHasCar)
-            System.Console.WriteLine("User has car");
-         }
-        }
+
+            System.Console.Write("Enter name: ");
+           string role = Console.ReadLine();
+
+           if( role == "Admin"){
+                System.Console.WriteLine("Enter user name: ");
+                string user_name = Console.ReadLine();
+                System.Console.Write("Enter {0} age : " , user_name);
+                short age = Convert.ToInt16(Console.ReadLine());
+
+                if (age <= 0 || age > 99){
+                    System.Console.Write("Enter {0} age : " , user_name);
+                 age = Convert.ToInt16(Console.ReadLine());
+                }
+
+             if (age <= 0 || age > 99){
+                   Console.WriteLine("Error");
+                   age = 0;
+                }
+                else 
+                System.Console.WriteLine("User's age is: " + age);
+
+           }   else
+           System.Console.WriteLine("You are not admin!");    
     }
+    }
+}
