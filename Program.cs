@@ -23,7 +23,8 @@ switch(user_input){
 
     default: System.Console.WriteLine("Enter correct number such as 5,20,25,155");
     break;
-
+ 
+ System.Console.WriteLine("Hello");
 
 
 }
