@@ -5,29 +5,22 @@ namespace Csharp
     class Program
     {
                 //DEVELOP BRANCH
-
-        static void Main(string[] args)
+     static void Main(string[] args)
         {
      
-short user_input = Convert.ToInt16(Console.ReadLine());
+int fahrenheit = 94;
+int celsNum = 32;
+int result = fahrenheit - celsNum;
 
-switch(user_input){
-    case 5: System.Console.WriteLine("Number is 5"); 
-    break;
-     case 20: System.Console.WriteLine("Number is 20"); 
-    break;
-     case 25: System.Console.WriteLine("Number is 25"); 
-    break;
-     case 155: System.Console.WriteLine("Number is 155"); 
-    break;
+decimal result1 = result * 5m/9;
+decimal result2 = result1;
 
-    default: System.Console.WriteLine("Enter correct number such as 5,20,25,155");
-    break;
+Console.WriteLine("The temperature is " + result2 + " Celsiues. "); 
 
-
+// int fahrenheit = 94;
+// decimal celsius = (fahrenheit - 32) * (5 / 9m);
+// Console.WriteLine("The temperature is " + celsius + " Celsius.");
 
 }
-
-        }
     }
 }
