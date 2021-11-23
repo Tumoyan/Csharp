@@ -8,14 +8,18 @@ namespace Csharp
      static void Main(string[] args)
         {
      
-int fahrenheit = 94;
-int celsNum = 32;
-int result = fahrenheit - celsNum;
+Random dice = new Random();
+int roll = dice.Next(1,7);
+Console.WriteLine(roll);
 
-decimal result1 = result * 5m/9;
-decimal result2 = result1;
+// int fahrenheit = 94;
+// int celsNum = 32;
+// int result = fahrenheit - celsNum;
 
-Console.WriteLine("The temperature is " + result2 + " Celsiues. "); 
+// decimal result1 = result * 5m/9;
+// decimal result2 = result1;
+
+// Console.WriteLine("The temperature is " + result2 + " Celsiues. "); 
 
 
 // int fahrenheit = 94;
