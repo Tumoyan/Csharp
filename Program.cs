@@ -150,7 +150,6 @@ namespace MyProject
             // triangle + non blank space + non-inverse
             /*
             #
-            #
             ##
             ###
             ####
