@@ -140,3 +140,32 @@ namespace MyProject
         }
     }
 }
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+using System;
+/*
+ *
+ **
+ ***
+ ****
+ *****
+ */
+namespace MyProject
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter height triangle:");
+            int height = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < height; i++)
+            {
+                for (int j = 0; j < i + 1; j++)
+                {
+                    Console.Write("#");
+                }
+                Console.WriteLine();
+            }
+        }
+    }
+}
