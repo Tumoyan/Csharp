@@ -137,16 +137,25 @@ namespace MyProject
 }
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 using System;
-/*
- *
- **
- ***
- ****
- *****
- */
+
+namespace MyProject
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
             Console.WriteLine("Enter height triangle:");
             int height = int.Parse(Console.ReadLine());
 
+            // triangle + non blank space + non-inverse
+            /*
+            #
+            #
+            ##
+            ###
+            ####
+            #####
+             */
             for (int i = 0; i < height; i++)
             {
                 for (int j = 0; j < i + 1; j++)
@@ -154,13 +163,17 @@ using System;
                     Console.Write("#");
                 }
                 Console.WriteLine();
-/*
-*****
-****
-***
-**
-*
- */
+            }
+            Console.WriteLine();
+
+            // triangle + non blank space + inverse
+            /*
+            #####
+            ####
+            ###
+            ##
+            #
+             */
             for (int i = 0; i < height; i++)
             {
                 for (int j = height; j > i; j--)
@@ -169,15 +182,62 @@ using System;
                 }
                 Console.WriteLine();
             }
-/*
-    *
-   **
-  ***
- ****
-*****
+            Console.WriteLine();
 
- */
-                // for loop height
+            // triangle + blank space + inverse
+            /*
+             #####
+              ####
+               ###
+                ##
+                 #
+             */
+            for (int i = 0; i < height; i++)
+            {
+                for (int j = 0; j <= i; j++)
+                {
+                    Console.Write(" ");
+                }
+                for (int j = height; j >= i + 1; j--)
+                {
+                    Console.Write("#");
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine();
+
+            // triangle + blank space + non-inverse
+            /*
+                      #
+                     ##
+                    ###
+                   ####
+                  #####
+                 ######
+             */
+            for (int i = 0; i < height; i++)
+            {
+                for (int j = height; j > i; j--)
+                {
+                    Console.Write(" ");
+                }
+                for (int j = 0; j <= i; j++)
+                {
+                    Console.Write("#");
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine();
+
+            // full triangle
+            /*
+                      #
+                     ###
+                    #####
+                   #######
+                  #########
+                 ###########
+             */
             for (int i = 0; i < height; i++)
             {
                 // for blank space
@@ -192,25 +252,6 @@ using System;
                 }
                 Console.WriteLine();
             }
-/*
-  ******
-   *****
-    ****
-     ***
-      **
-       *
- */
-            for (int i = 0; i < height; i++)
-            {
-                for (int j = 0; j <= i; j++)
-                {
-                    Console.Write(" ");
-                }
-                for (int j = height; j >= i + 1; j--)
-                {
-                    Console.Write("#");
-                }
-                Console.WriteLine();
-            }
         }
     }
+}
