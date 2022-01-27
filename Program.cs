@@ -161,9 +161,6 @@ using System;
 **
 *
  */
-            Console.WriteLine("Enter height triangle:");
-            int height = int.Parse(Console.ReadLine());
-
             for (int i = 0; i < height; i++)
             {
                 for (int j = height; j > i; j--)
@@ -203,9 +200,6 @@ using System;
       **
        *
  */
-            Console.WriteLine("Enter height triangle:");
-            int height = int.Parse(Console.ReadLine());
-
             for (int i = 0; i < height; i++)
             {
                 for (int j = 0; j <= i; j++)
