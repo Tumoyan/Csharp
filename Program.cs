@@ -144,12 +144,6 @@ using System;
  ****
  *****
  */
-namespace MyProject
-{
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
             Console.WriteLine("Enter height triangle:");
             int height = int.Parse(Console.ReadLine());
 
@@ -160,10 +154,6 @@ namespace MyProject
                     Console.Write("#");
                 }
                 Console.WriteLine();
-            }
-        }
-    }
-}
 /*
 *****
 ****
@@ -177,6 +167,29 @@ namespace MyProject
             for (int i = 0; i < height; i++)
             {
                 for (int j = height; j > i; j--)
+                {
+                    Console.Write("#");
+                }
+                Console.WriteLine();
+            }
+/*
+    *
+   **
+  ***
+ ****
+*****
+
+ */
+                // for loop height
+            for (int i = 0; i < height; i++)
+            {
+                // for blank space
+                for (int j = height; j > i; j--)
+                {
+                    Console.Write(" ");
+                }
+                // for draw triangle
+                for (int j = 0; j <= i * 2; j++)
                 {
                     Console.Write("#");
                 }
