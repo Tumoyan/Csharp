@@ -99,6 +99,7 @@ namespace MyProject
         }
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 using System;
+
 namespace MyProject
 {
     internal class Program
@@ -108,26 +109,33 @@ namespace MyProject
             uint oddNumbersCount = 0;
             uint evenNumbersCount = 0;
 
+            int oddNumbersSum = 0;
+            int evenNumbersSum = 0;
+
             Console.WriteLine("Enter first diapozon vaule");
             int currentValue = int.Parse(Console.ReadLine());
             Console.WriteLine("Enter last diapazon value");
             int limit = int.Parse(Console.ReadLine());
 
-            while(currentValue <= limit)
+            while (currentValue <= limit)
             {
                 if (currentValue % 2 == 0)
                 {
                     evenNumbersCount++;
+                    evenNumbersSum += currentValue;
                 }
                 else
                 {
                     oddNumbersCount++;
+                    oddNumbersSum += currentValue;
                 }
                 currentValue++;
             }
 
             Console.WriteLine("Odd count numbers: " + oddNumbersCount);
             Console.WriteLine("Even count numbers: " + evenNumbersCount);
+            Console.WriteLine("Odd sum  numbers: " + oddNumbersSum);
+            Console.WriteLine("Even sun numbers: " + evenNumbersSum);
             Console.ReadLine();
         }
     }
