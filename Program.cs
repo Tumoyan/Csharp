@@ -176,7 +176,7 @@ namespace MyProject
 
             for (int i = 0; i < height; i++)
             {
-                for (int j = height; j > i + 1; j--)
+                for (int j = height; j > i; j--)
                 {
                     Console.Write("#");
                 }
